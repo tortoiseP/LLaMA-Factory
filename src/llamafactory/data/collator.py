@@ -123,12 +123,12 @@ class SFTDataCollatorWith4DAttentionMask(MultiModalDataCollatorForSeq2Seq):
 @dataclass
 class PairwiseDataCollatorWithPadding(MultiModalDataCollatorForSeq2Seq):
     r"""
-    Data collator for pairwise data.
+    Data collator for pairwise rawdata.
     """
 
     def __call__(self, features: Sequence[Dict[str, Any]]) -> Dict[str, "torch.Tensor"]:
         r"""
-        Pads batched data to the longest sequence in the batch.
+        Pads batched rawdata to the longest sequence in the batch.
 
         We generate 2 * n examples where the first n examples represent chosen examples and
         the last n examples represent rejected examples.
@@ -151,7 +151,7 @@ class PairwiseDataCollatorWithPadding(MultiModalDataCollatorForSeq2Seq):
 @dataclass
 class KTODataCollatorWithPadding(MultiModalDataCollatorForSeq2Seq):
     r"""
-    Data collator for KTO data.
+    Data collator for KTO rawdata.
     """
 
     def __call__(self, features: Sequence[Dict[str, Any]]) -> Dict[str, "torch.Tensor"]:

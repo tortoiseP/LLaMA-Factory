@@ -227,7 +227,7 @@ You also can add a custom chat template to [template.py](src/llamafactory/data/t
 
 <details><summary>Pre-training datasets</summary>
 
-- [Wiki Demo (en)](data/wiki_demo.txt)
+- [Wiki Demo (en)](rawdata/wiki_demo.txt)
 - [RefinedWeb (en)](https://huggingface.co/datasets/tiiuae/falcon-refinedweb)
 - [RedPajama V2 (en)](https://huggingface.co/datasets/togethercomputer/RedPajama-Data-V2)
 - [Wikipedia (en)](https://huggingface.co/datasets/olm/olm-wikipedia-20221220)
@@ -243,7 +243,7 @@ You also can add a custom chat template to [template.py](src/llamafactory/data/t
 
 <details><summary>Supervised fine-tuning datasets</summary>
 
-- [Identity (en&zh)](data/identity.json)
+- [Identity (en&zh)](rawdata/identity.json)
 - [Stanford Alpaca (en)](https://github.com/tatsu-lab/stanford_alpaca)
 - [Stanford Alpaca (zh)](https://github.com/ymcui/Chinese-LLaMA-Alpaca-3)
 - [Alpaca GPT4 (en&zh)](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM)
@@ -417,7 +417,7 @@ Download the pre-built Docker images: [32GB](http://mirrors.cn-central-221.ovaij
 
 ### Data Preparation
 
-Please refer to [data/README.md](data/README.md) for checking the details about the format of dataset files. You can either use datasets on HuggingFace / ModelScope / Modelers hub or load the dataset in local disk.
+Please refer to [data/README.md](rawdata/README.md) for checking the details about the format of dataset files. You can either use datasets on HuggingFace / ModelScope / Modelers hub or load the dataset in local disk.
 
 > [!NOTE]
 > Please update `data/dataset_info.json` to use your custom dataset.
@@ -486,7 +486,7 @@ docker run -dit --gpus=all \
     -v ./hf_cache:/root/.cache/huggingface \
     -v ./ms_cache:/root/.cache/modelscope \
     -v ./om_cache:/root/.cache/openmind \
-    -v ./data:/app/data \
+    -v ./rawdata:/app/rawdata \
     -v ./output:/app/output \
     -p 7860:7860 \
     -p 8000:8000 \
@@ -511,7 +511,7 @@ docker run -dit \
     -v ./hf_cache:/root/.cache/huggingface \
     -v ./ms_cache:/root/.cache/modelscope \
     -v ./om_cache:/root/.cache/openmind \
-    -v ./data:/app/data \
+    -v ./rawdata:/app/rawdata \
     -v ./output:/app/output \
     -v /usr/local/dcmi:/usr/local/dcmi \
     -v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi \
@@ -545,7 +545,7 @@ docker run -dit \
     -v ./hf_cache:/root/.cache/huggingface \
     -v ./ms_cache:/root/.cache/modelscope \
     -v ./om_cache:/root/.cache/openmind \
-    -v ./data:/app/data \
+    -v ./rawdata:/app/rawdata \
     -v ./output:/app/output \
     -v ./saves:/app/saves \
     -p 7860:7860 \

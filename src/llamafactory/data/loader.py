@@ -221,7 +221,7 @@ def _get_preprocessed_dataset(
             if stage == "pt":
                 raise RuntimeError("Cannot find sufficient samples, consider increasing dataset size.")
             else:
-                raise RuntimeError("Cannot find valid samples, check `data/README.md` for the data format.")
+                raise RuntimeError("Cannot find valid samples, check `rawdata/README.md` for the rawdata format.")
 
     return dataset
 
@@ -241,7 +241,7 @@ def get_dataset(
     # Load tokenized dataset
     if data_args.tokenized_path is not None:
         if has_tokenized_data(data_args.tokenized_path):
-            logger.warning("Loading dataset from disk will ignore other data arguments.")
+            logger.warning("Loading dataset from disk will ignore other rawdata arguments.")
             dataset_dict: "DatasetDict" = load_from_disk(data_args.tokenized_path)
             logger.info("Loaded tokenized dataset from {}.".format(data_args.tokenized_path))
 

@@ -104,7 +104,7 @@ def _process_request(
                     input_messages.append({"role": ROLE_MAPPING[message.role], "content": input_item.text})
                 else:
                     image_url = input_item.image_url.url
-                    if re.match(r"^data:image\/(png|jpg|jpeg|gif|bmp);base64,(.+)$", image_url):  # base64 image
+                    if re.match(r"^rawdata:image\/(png|jpg|jpeg|gif|bmp);base64,(.+)$", image_url):  # base64 image
                         image_stream = io.BytesIO(base64.b64decode(image_url.split(",", maxsplit=1)[1]))
                     elif os.path.isfile(image_url):  # local file
                         image_stream = open(image_url, "rb")

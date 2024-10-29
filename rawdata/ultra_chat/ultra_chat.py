@@ -49,7 +49,7 @@ class UltraChat(datasets.GeneratorBasedBuilder):
                     except Exception:
                         continue
                     key: int = data["id"]
-                    content: List[str] = data["data"]
+                    content: List[str] = data["rawdata"]
                     if len(content) % 2 == 1:
                         content.pop(-1)
                     if len(content) < 2:

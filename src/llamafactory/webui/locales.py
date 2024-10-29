@@ -204,7 +204,7 @@ LOCALES = {
     "dataset_dir": {
         "en": {
             "label": "Data dir",
-            "info": "Path to the data directory.",
+            "info": "Path to the rawdata directory.",
         },
         "ru": {
             "label": "Директория данных",
@@ -478,7 +478,7 @@ LOCALES = {
     "val_size": {
         "en": {
             "label": "Val size",
-            "info": "Proportion of data in the dev set.",
+            "info": "Proportion of rawdata in the dev set.",
         },
         "ru": {
             "label": "Размер валидации",
@@ -1581,7 +1581,7 @@ LOCALES = {
     },
     "infer_dtype": {
         "en": {
-            "label": "Inference data type",
+            "label": "Inference rawdata type",
         },
         "ru": {
             "label": "Тип данных для вывода",

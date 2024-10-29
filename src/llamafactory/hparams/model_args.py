@@ -38,7 +38,7 @@ class QuantizationArguments:
     )
     quantization_type: Literal["fp4", "nf4"] = field(
         default="nf4",
-        metadata={"help": "Quantization data type to use in bitsandbytes int4 training."},
+        metadata={"help": "Quantization rawdata type to use in bitsandbytes int4 training."},
     )
     double_quantization: bool = field(
         default=True,
@@ -278,7 +278,7 @@ class ModelArguments(QuantizationArguments, ProcessorArguments, ExportArguments,
     compute_dtype: Optional[torch.dtype] = field(
         default=None,
         init=False,
-        metadata={"help": "Torch data type for computing model outputs, derived from `fp/bf16`. Do not specify it."},
+        metadata={"help": "Torch rawdata type for computing model outputs, derived from `fp/bf16`. Do not specify it."},
     )
     device_map: Optional[Union[str, Dict[str, Any]]] = field(
         default=None,

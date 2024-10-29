@@ -40,7 +40,7 @@ def calculate_lr(
     batch_size: int,  # total batch size, namely (batch size * gradient accumulation * world size)
     stage: Literal["pt", "sft"] = "sft",
     dataset: str = "alpaca_en_demo",
-    dataset_dir: str = "data",
+    dataset_dir: str = "rawdata",
     template: str = "default",
     cutoff_len: int = 1024,  # i.e. maximum input length during training
     is_mistral_or_gemma: bool = False,  # mistral and gemma models opt for a smaller learning rate,

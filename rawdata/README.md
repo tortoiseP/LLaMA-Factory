@@ -71,7 +71,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "columns": {
     "prompt": "instruction",
     "query": "input",
@@ -99,7 +99,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "columns": {
     "prompt": "text"
   }
@@ -127,7 +127,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "ranking": true,
   "columns": {
     "prompt": "instruction",
@@ -191,7 +191,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -244,7 +244,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "ranking": true,
   "columns": {
@@ -283,7 +283,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -324,7 +324,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -365,7 +365,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -403,7 +403,7 @@ Regarding the above dataset, the *dataset description* in `dataset_info.json` sh
 
 ```json
 "dataset_name": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "messages"

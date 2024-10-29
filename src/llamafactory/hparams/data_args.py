@@ -22,7 +22,7 @@ from typing import Literal, Optional
 @dataclass
 class DataArguments:
     r"""
-    Arguments pertaining to what data we are going to input our model for training and evaluation.
+    Arguments pertaining to what rawdata we are going to input our model for training and evaluation.
     """
 
     template: Optional[str] = field(
@@ -38,7 +38,7 @@ class DataArguments:
         metadata={"help": "The name of dataset(s) to use for evaluation. Use commas to separate multiple datasets."},
     )
     dataset_dir: str = field(
-        default="data",
+        default="rawdata",
         metadata={"help": "Path to the folder containing the datasets."},
     )
     cutoff_len: int = field(
@@ -67,7 +67,7 @@ class DataArguments:
     )
     interleave_probs: Optional[str] = field(
         default=None,
-        metadata={"help": "Probabilities to sample data from datasets. Use commas to separate multiple datasets."},
+        metadata={"help": "Probabilities to sample rawdata from datasets. Use commas to separate multiple datasets."},
     )
     overwrite_cache: bool = field(
         default=False,

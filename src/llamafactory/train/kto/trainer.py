@@ -114,7 +114,7 @@ class CustomKTOTrainer(KTOTrainer):
         return super().create_scheduler(num_training_steps, optimizer)
 
     @override
-    def _get_train_sampler(self) -> Optional["torch.utils.data.Sampler"]:
+    def _get_train_sampler(self) -> Optional["torch.utils.rawdata.Sampler"]:
         r"""
         Replaces the sequential sampler of KTO Trainer created by trl with the random sampler.
         """

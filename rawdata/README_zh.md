@@ -71,7 +71,7 @@
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "columns": {
     "prompt": "instruction",
     "query": "input",
@@ -99,7 +99,7 @@
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "columns": {
     "prompt": "text"
   }
@@ -127,7 +127,7 @@
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "ranking": true,
   "columns": {
     "prompt": "instruction",
@@ -191,7 +191,7 @@ KTO 数据集需要提供额外的 `kto_tag` 列。详情请参阅 [sharegpt](#s
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -244,7 +244,7 @@ Sharegpt 格式的偏好数据集同样需要在 `chosen` 列中提供更优的�
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "ranking": true,
   "columns": {
@@ -283,7 +283,7 @@ KTO 数据集需要额外添加一个 `kto_tag` 列，包含 bool 类型的人�
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -324,7 +324,7 @@ KTO 数据集需要额外添加一个 `kto_tag` 列，包含 bool 类型的人�
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -365,7 +365,7 @@ KTO 数据集需要额外添加一个 `kto_tag` 列，包含 bool 类型的人�
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "conversations",
@@ -403,7 +403,7 @@ OpenAI 格式仅仅是 sharegpt 格式的一种特殊情况，其中第一条消
 
 ```json
 "数据集名称": {
-  "file_name": "data.json",
+  "file_name": "rawdata.json",
   "formatting": "sharegpt",
   "columns": {
     "messages": "messages"

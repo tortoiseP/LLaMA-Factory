@@ -6,7 +6,7 @@ import datasets
 
 
 _HF_ENDPOINT = os.getenv("HF_ENDPOINT", "https://huggingface.co")
-_DESCRIPTION = "Human preference data about helpfulness and harmlessness."
+_DESCRIPTION = "Human preference rawdata about helpfulness and harmlessness."
 _CITATION = ""
 _HOMEPAGE = "{}/datasets/Anthropic/hh-rlhf".format(_HF_ENDPOINT)
 _LICENSE = "mit"

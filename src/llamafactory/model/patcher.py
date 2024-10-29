@@ -116,7 +116,7 @@ def patch_config(
     # deepspeed zero3 is not compatible with low_cpu_mem_usage
     init_kwargs["low_cpu_mem_usage"] = model_args.low_cpu_mem_usage and (not is_deepspeed_zero3_enabled())
 
-    # cast data type of the model if:
+    # cast rawdata type of the model if:
     # 1. not deepspeed zero3 and not fsdp (keep zero3 or fsdp in float32)
     # 2. quantization_bit is not None (qlora)
     if (not is_deepspeed_zero3_enabled() and not is_fsdp_enabled()) or model_args.quantization_bit is not None:

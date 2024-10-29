@@ -38,7 +38,7 @@ class EvaluationArguments:
     )
     seed: int = field(
         default=42,
-        metadata={"help": "Random seed to be used with data loaders."},
+        metadata={"help": "Random seed to be used with rawdata loaders."},
     )
     lang: Literal["en", "zh"] = field(
         default="en",
