@@ -1,0 +1,11 @@
+### model
+model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
+template: llama3
+
+### export
+export_dir: models/llama3_lora_pt
+export_quantization_bit: 4
+export_quantization_dataset: /app/data/llama3_lora_pretrain_1110  # 这个参数的作用未知
+export_size: 2
+export_device: cpu
+export_legacy_format: false
