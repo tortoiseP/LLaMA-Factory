@@ -1,0 +1,14 @@
+{
+  "train": {
+    "file_name": "train.json",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "eval": {
+    "file_name": "eval.json",
+    "columns": {
+      "prompt": "text"
+    }
+  }
+}
