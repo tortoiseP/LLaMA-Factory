@@ -1,5 +1,5 @@
-model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
-adapter_name_or_path: saves/Meta-llama3-8b-Instruct/lora/pretrain
+model_name_or_path: meta-llama/Meta-Llama-3-8B
+adapter_name_or_path: saves/Meta-Llama-3-8B/lora/pretrain
 template: llama3
 #stage: pt  #
 finetuning_type: lora
