@@ -1,4 +1,8 @@
-model_name_or_path: meta-llama/Llama-3.2-11B-Vision
-template: llama3
-cache_dir: /workspace/llama_factory/.cache/huggingface
+model_name_or_path: meta-llama/Llama-3.2-11B-Vision-Instruct
+adapter_name_or_path: saves/Llama-3.2-11B-Vision-Instruct/lora/sft
+template: mllama
+#cache_dir: /workspace/llama_factory/.cache/huggingface
+cache_dir: /workspace/huggingface
+infer_backend: huggingface  # choices: [huggingface, vllm]
+#trust_remote_code: true
 
