@@ -1,5 +1,8 @@
 model_name_or_path: Qwen/Qwen2-VL-7B-Instruct
 template: qwen2_vl
+cache_dir: /workspace/modelscope
 infer_backend: huggingface  # choices: [huggingface, vllm]
-cache_dir: /workspace/llama_factory/.cache/huggingface
+#vllm_enforce_eager: true
 #trust_remote_code: true
+
+

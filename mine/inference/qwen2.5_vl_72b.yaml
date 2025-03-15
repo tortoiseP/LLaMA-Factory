@@ -1,0 +1,8 @@
+model_name_or_path: Qwen/Qwen2.5-VL-72B-Instruct
+quantization_bit: 4
+quantization_method: bitsandbytes
+template: qwen2_vl
+cache_dir: /workspace/modelscope
+infer_backend: huggingface  # choices: [huggingface, vllm]
+#trust_remote_code: true
+

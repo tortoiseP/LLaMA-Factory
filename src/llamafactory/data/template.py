@@ -982,6 +982,7 @@ register_template(
     format_prefix=EmptyFormatter(slots=[{"bos_token"}]),
     stop_words=["<|eot_id|>", "<|eom_id|>"],
     mm_plugin=get_mm_plugin(name="mllama", image_token="<|image|>"),
+    default_system="You are a helpful assistant. 你是一个乐于助人的助手。",
 )
 
 

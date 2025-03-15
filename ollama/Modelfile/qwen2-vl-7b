@@ -1,0 +1,5 @@
+FROM /workspace/code/llama.cpp/outputs/qwen2-vl-7b-f16.gguf
+PARAMETER num_ctx 4096
+PARAMETER temperature 0.7
+SYSTEM """你是一个支持图像和文本交互的AI助手"""
+TEMPLATE """<|im_start|>system\n{{ .System }}<|im_end|>\n<|im_start|>user\n{{ .Prompt }}{{ if .Images }}\n<image>{{ end }}<|im_end|>\n<|im_start|>assistant\n"""
