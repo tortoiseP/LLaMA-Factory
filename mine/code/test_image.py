@@ -28,7 +28,7 @@ def main():
         base_url="http://localhost:8000/v1",
     )
     messages = []
-    image_path = "/workspace/llama_factory/app/data/llava-zh-3k/images/1_1.jpg"
+    image_path = "/workspace/llama_factory/app/mine/data/llava-zh-3k-data/1_1.jpg"
     with open(image_path, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
     data_url = f"data:image/jpeg;base64,{encoded_string}"
